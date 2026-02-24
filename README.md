@@ -3,6 +3,9 @@
  * Runs [OpenClaw](https://openclaw.ai) in Docker using a [secure Chainguard base image](https://images.chainguard.dev/directory/image/node/versions)
  * The container runs as an unprivileged user (uid 65532)
  * OpenClaw only has access to the container filesystem and the configuration volume outside the container
+ * Tools included:
+   * Gogcli for Google Apps
+   * Chromium for headless browsing
 
 The container entrypoint is the OpenClaw CLI. You can append subcommands and options directly.
 
