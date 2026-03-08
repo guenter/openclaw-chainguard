@@ -6,7 +6,7 @@ USER root
 
 # Install apk packages
 RUN apk update \
-  && apk add --no-cache go chromium
+  && apk add --no-cache go chromium xvfb xvfb-run dbus font-noto mesa-gl udev ca-certificates
 
 # Build gog CLI
 RUN git clone https://github.com/steipete/gogcli.git -b ${GOG_VERSION} /gogcli \
